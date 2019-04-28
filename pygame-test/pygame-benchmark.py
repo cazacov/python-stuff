@@ -4,9 +4,9 @@ import sys
 cx = 500
 cy = 500
 
-
 position = [0, 0]
 pg.init()
+opts = 0
 opts = pg.HWSURFACE | pg.FULLSCREEN | pg.DOUBLEBUF
 screen = pg.display.set_mode([1000, 1000], opts)
 screen.fill([0, 0, 0])
