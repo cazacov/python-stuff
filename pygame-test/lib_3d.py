@@ -35,7 +35,7 @@ class Render3D:
 
             if normal[2] > 0:
 
-                lightVector = [-1, -1, 1]
+                lightVector = [-1, 1, 1]
                 cosA = cosAngle(lightVector, normal)
 
                 light = 25

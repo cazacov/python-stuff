@@ -47,7 +47,7 @@ def cross_product(v1, v2):
     y2 = v2[1]
     z2 = v2[2]
     return [y1 * z2 - y2 * z1,
-            x1 * z2 - x2 * z1,
+            x2 * z1 - x1 * z2,
             x1 * y2 - x2 * y1]
 
 
