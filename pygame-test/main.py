@@ -9,8 +9,8 @@ screen_width = 1600
 screen_height = 1000
 
 origin = [screen_width/2, screen_height/2]
-vertices = pentagonal_hexecontahedron.vertices
-faces = pentagonal_hexecontahedron.faces
+vertices = rhombicuboctahedron.vertices
+faces = rhombicuboctahedron.faces
 position = [0, 0, 0]
 zoom = 1
 
