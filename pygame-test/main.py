@@ -9,8 +9,8 @@ screen_width = 1600
 screen_height = 1000
 
 origin = [screen_width/2, screen_height/2]
-vertices = rhombicuboctahedron.vertices
-faces = rhombicuboctahedron.faces
+vertices = starship.vertices
+faces = starship.faces
 position = [0, 0, 0]
 zoom = 1
 
