@@ -7,13 +7,13 @@ def vect(fromPoint, toPoint):
             toPoint[2] - fromPoint[2]]
 
 
-def scale(vector, scaleFactor):
+def scale(vector, scale_factor):
     x = vector[0]
     y = vector[1]
     z = vector[2]
-    return [x * scaleFactor,
-            y * scaleFactor,
-            z * scaleFactor]
+    return [x * scale_factor,
+            y * scale_factor,
+            z * scale_factor]
 
 
 def add(v1, v2):
@@ -51,7 +51,7 @@ def cross_product(v1, v2):
             x1 * y2 - x2 * y1]
 
 
-def rotateX(vertices, angle):
+def rotate_x(vertices, angle):
     for point in vertices:
         x = point[0]
         y = point[1]
@@ -60,7 +60,7 @@ def rotateX(vertices, angle):
         point[2] = y * math.sin(angle) + z * math.cos(angle)
 
 
-def rotateY(vertices, angle):
+def rotate_y(vertices, angle):
     for point in vertices:
         x = point[0]
         y = point[1]
@@ -69,7 +69,7 @@ def rotateY(vertices, angle):
         point[2] = x * math.sin(angle) + z * math.cos(angle)
 
 
-def rotateZ(vertices, angle):
+def rotate_z(vertices, angle):
     for point in vertices:
         x = point[0]
         y = point[1]
@@ -82,5 +82,5 @@ def length(vector):
     return math.sqrt(dot_product(vector, vector))
 
 
-def cosAngle(vector1, vector2):
+def cos_angle(vector1, vector2):
     return dot_product(vector1, vector2) / (length(vector1) * length(vector2))

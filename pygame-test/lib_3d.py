@@ -2,13 +2,14 @@ import pygame as pg
 
 from vector_ops import *
 
+
 class Render3D:
 
     def init(self):
         pass
 
     def render(self, screen, vertices, faces, position, zoom, origin):
-        screen.fill([0, 0, 0])
+        screen.fill([32, 0, 0])
 
         cx = origin[0]
         cy = origin[1]
@@ -35,12 +36,12 @@ class Render3D:
 
             if normal[2] > 0:
 
-                lightVector = [-1, 1, 1]
-                cosA = cosAngle(lightVector, normal)
+                light_vector = [-1, 1, 1]
+                cos_light = cos_angle(light_vector, normal)
 
                 light = 25
-                if cosA > 0:
-                    light = light + cosA * 230
+                if cos_light > 0:
+                    light = light + cos_light * 230
 
                 pg.draw.polygon(screen, [light, light, light], pointlist, 0)
                 pg.draw.polygon(screen, [255, 255, 255], pointlist, 1)
